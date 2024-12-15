@@ -133,3 +133,98 @@ div > img {
     width: 100%;
 }
 
+.parrafo-tres > h2 {
+    font-size: 4.5em;
+    margin: 20px;
+}
+
+.parrafo-tres > p {
+    font-size: 1.5em;
+    margin: 20px;
+}
+
+@media (max-width: 500px) {
+    .parrafo-tres {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+    .parrafo-tres > h2 {
+        padding-left: 1em;
+        font-size: 3em;
+}
+    .parrafo-tres > p {
+        font-size: 1.2em;
+    }
+    
+}
+
+.class1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.class1 > img {
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.class1 > h2 {
+    margin: 20px;
+    font-size: 2.5em;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    min-width: 150px;
+    max-width: 550px;
+    background-color: rgba(171, 171, 171, 0.57);
+    border-radius: 1.5em;
+    padding: 25px;
+}
+
+.class1 > button {
+    margin: 25px;
+    font-size: 0.9em;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
+    justify-self: center;
+    align-self: center;
+    border: 1px solid white;
+    border-radius: 2em;
+    padding: 10px;
+    min-width: 250px;
+    max-width: 550px;
+}
+
+@media (max-width: 830px) {
+    .class1 > h2 {
+        font-size: 2.1em;
+        margin: 5px;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 5;
+        padding-left: 1.2em;
+    }
+
+    .class1 > button {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        align-self: center;
+    }
+}
