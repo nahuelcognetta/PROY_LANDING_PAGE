@@ -128,6 +128,65 @@ a {
     padding: 20px;
 }
 
+.img-uno > button {
+    width: 10em;
+    border-radius: 3em;
+    padding: 10px;   
+    background-color: white;
+    border: 1px solid white;
+}
+
+.img-dos > button {
+    width: 10em;
+    border-radius: 3em;
+    padding: 10px;   
+    background-color: white;
+    border: 1px solid white;
+}
+
+.img-tres > button {
+    width: 10em;
+    border-radius: 3em;
+    padding: 10px;   
+    background-color: white;
+    border: 1px solid white;
+}
+
+.img-cuatro > button {
+    width: 10em;
+    border-radius: 3em;
+    padding: 10px;   
+    background-color: white;
+    border: 1px solid white;
+}
+
+@media (max-width: 1175px) {
+    .img-uno > button {
+        display: flex;
+        justify-self: center;
+        justify-content: center;
+    }
+
+    .img-dos > button {
+        display: flex;
+        justify-self: center;
+        justify-content: center;
+    }
+
+    .img-tres > button {
+        display: flex;
+        justify-self: center;
+        justify-content: center;
+    }
+
+    .img-cuatro > button {
+        display: flex;
+        justify-self: center;
+        justify-content: center;
+    }
+
+
+}
 
 div > img {
     width: 100%;
@@ -226,5 +285,97 @@ div > img {
         grid-row-start: 3;
         grid-row-end: 5;
         align-self: center;
+    }
+}
+
+#flex-container-tres {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+#flex-container-tres > div {
+    flex-basis: 600px;
+    flex-grow: 1;
+    background-color: rgba(84, 83, 83, 0.108);
+    border-radius: 20px;
+}
+
+.uno, .dos, .tres {
+    padding: 20px;
+}
+
+.uno > h2 {
+    padding: 10px;
+}
+
+.uno > button {
+    width: 10em;
+    border-radius: 3em;
+    padding: 10px;   
+    background-color: white;
+    border: 1px solid white;
+}
+
+.uno > img {
+    padding: 10px;
+}
+
+.dos > h2 {
+    padding: 10px;
+}
+
+.dos > button {
+    width: 10em;
+    border-radius: 3em;
+    padding: 10px;   
+    background-color: white;
+    border: 1px solid white;
+}
+
+.dos > img {
+    padding: 10px;
+}
+
+.tres > h2 {
+    padding: 10px;
+}
+
+.tres > button {
+    width: 10em;
+    border-radius: 3em;
+    padding: 10px;   
+    background-color: white;
+    border: 1px solid white;
+}
+
+.tres > img {
+    padding: 10px;
+}
+
+@media (max-width: 830px) {
+    
+    #flex-container-tres {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .uno > button {
+        display: flex;
+        justify-content: center;
+        justify-self: center;
+    }
+
+    .dos > button {
+        display: flex;
+        justify-content: center;
+        justify-self: center;
+    }
+
+    .tres > button {
+        display: flex;
+        justify-content: center;
+        justify-self: center;
     }
 }
