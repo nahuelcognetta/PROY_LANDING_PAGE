@@ -161,6 +161,27 @@ a {
 }
 
 @media (max-width: 1175px) {
+
+    .img-uno > h2, p {
+        display: flex;
+        justify-self: center;
+    }
+
+    .img-dos > h2, p {
+        display: flex;
+        justify-self: center;
+    }
+
+    .img-tres > h2, p {
+        display: flex;
+        justify-self: center;
+    }
+
+    .img-cuatro > h2, p {
+        display: flex;
+        justify-self: center;
+    }
+
     .img-uno > button {
         display: flex;
         justify-self: center;
@@ -184,7 +205,6 @@ a {
         justify-self: center;
         justify-content: center;
     }
-
 
 }
 
@@ -234,7 +254,7 @@ div > img {
 
 .class1 > h2 {
     margin: 20px;
-    font-size: 2.5em;
+    font-size: 3.5em;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 2;
@@ -247,12 +267,11 @@ div > img {
     max-width: 550px;
     background-color: rgba(171, 171, 171, 0.57);
     border-radius: 1.5em;
-    padding: 25px;
+    padding: 0.7em;
 }
 
 .class1 > button {
-    margin: 25px;
-    font-size: 0.9em;
+    font-size: 1.2em;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
@@ -263,7 +282,7 @@ div > img {
     align-self: center;
     border: 1px solid white;
     border-radius: 2em;
-    padding: 10px;
+    padding: 20px;
     min-width: 250px;
     max-width: 550px;
 }
@@ -378,4 +397,84 @@ div > img {
         justify-content: center;
         justify-self: center;
     }
+}
+
+.red {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.red > img {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.red > h2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    z-index: 1;
+    padding: 20px;
+    font-size: 3em;
+    color: white;
+    justify-self: center;
+    align-self: flex-end;
+}
+
+.red > p {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    z-index: 1;
+    color: white;
+    padding: 15px;
+    font-size: 1.2em;
+    justify-self: center;
+}
+
+@media (max-width: 1160px) {
+
+    .red {
+        background-color: rgba(84, 83, 83, 0.108);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .red > h2 {
+        color: black;
+        font-size: 1.5em;
+        align-self: center;
+    }
+
+    .red > p {
+        font-size: 1em;
+        color: black;
+        align-self: center;
+    }
+}
+
+#last-section {
+    display: flex;
+    margin-top: 2em;
+    padding: 5em;
+    gap: 8em;
+    align-items: center;
+}
+
+#last-section > div  {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    font-size: 2em;
+    gap: 3em;
+}
+
+
+#last-section > img {
+    width: 40%;
 }
