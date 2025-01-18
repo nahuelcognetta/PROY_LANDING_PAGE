@@ -141,6 +141,26 @@ a {
     padding: 20px;
 }
 
+.img-uno > img {
+    max-height: 400px;
+    object-fit: contain;
+}
+
+.img-dos > img {
+    max-height: 400px;
+    object-fit:contain;
+}
+
+.img-tres > img {
+    max-height: 400px;
+    object-fit: contain;
+}
+
+.img-cuatro > img {
+    max-height: 400px;
+    object-fit: contain;
+}
+
 .img-uno > button {
     width: 10em;
     border-radius: 3em;
@@ -366,6 +386,8 @@ div > img {
 }
 
 .uno > img {
+    max-height: 350px;
+    object-fit: cover;
     padding: 10px;
 }
 
@@ -383,6 +405,8 @@ div > img {
 }
 
 .dos > img {
+    object-fit: cover;
+    max-height: 350px;
     padding: 10px;
 }
 
@@ -400,6 +424,8 @@ div > img {
 }
 
 .tres > img {
+    max-height: 350px;
+    object-fit: cover;
     padding: 10px;
 }
 
